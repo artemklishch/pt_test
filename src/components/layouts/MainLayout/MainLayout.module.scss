@@ -1,0 +1,44 @@
+@import "../../../variables.scss";
+
+@mixin centrelizedData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.MainLayout {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header {
+    color: $white;
+    background-color: $mainlayoutnavcolor;
+    height: 100px;
+    @include centrelizedData;
+  }
+  &__main {
+    flex-grow: 1;
+    background-color: $mainBackground;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer {
+    height: 50px;
+    background-color: $mainlayoutnavcolor;
+    color: $white;
+    @include centrelizedData;
+  }
+}
+
+@media (min-width: $min-mobile-width) {
+  .MainLayout__main {
+    padding: 20px 100px;
+  }
+}

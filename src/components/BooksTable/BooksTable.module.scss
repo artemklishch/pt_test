@@ -1,0 +1,18 @@
+@import "../../variables.scss";
+
+.BooksTable {
+  background-color: $tableBackground;
+  flex-grow: 1;
+  &__table {
+    &_row {
+      display: flex;
+      & > div {
+        white-space: normal;
+        flex-grow: 1 !important;
+      }
+    }
+    &_grid > div {
+      display: flex;
+    }
+  }
+}
