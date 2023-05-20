@@ -3,7 +3,16 @@ $white: #fff;
 $mainlayoutnavcolor: rgb(248, 24, 24);
 $mainBackground: rgb(250, 248, 179);
 $tableBackground: rgb(235, 235, 235);
+$mobilemenubgc: rgb(121, 34, 34);
+$mobilemenubgc_hover: rgb(121, 57, 57);
+$mobilemenubgc_active: rgb(218, 103, 103);
 
 //breackpoints
 $min-mobile-width: 500px;
 $min-middle-width: 750px;
+
+// zIndexes
+$menuZIndex: 1;
+
+// other
+$commonBorderRadius: 20px;

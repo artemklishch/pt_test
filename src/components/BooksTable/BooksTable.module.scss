@@ -3,6 +3,7 @@
 .BooksTable {
   background-color: $tableBackground;
   flex-grow: 1;
+  border-radius: $commonBorderRadius;
   &__table {
     &_row {
       display: flex;

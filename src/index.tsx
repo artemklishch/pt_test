@@ -3,13 +3,16 @@ import { Provider } from "react-redux";
 import "./index.scss";
 import App from "./App";
 import { store } from "./store";
-import 'react-virtualized/styles.css';
+import { BrowserRouter } from "react-router-dom";
+import "react-virtualized/styles.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
 );
