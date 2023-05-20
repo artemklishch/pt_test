@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+@mixin cellStyles {
+  display: flex;
+  span {
+    flex-grow: 2;
+    text-align: left;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 40%;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  span:first-child {
+    width: 20%;
+    border-left: none;
+    padding-left: 15px;
+  }
+}
+
+.AllBooksTable {
+  flex-grow: 1;
+  background-color: $tableBackground;
+  padding: 10px;
+  border-radius: $commonBorderRadius;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__header {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    @include cellStyles;
+  }
+  &__box {
+    max-height: 60vh;
+    overflow: auto;
+    &_wrapper {
+      .itemsList {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &__item {
+          @include cellStyles;
+        }
+      }
+    }
+  }
+}

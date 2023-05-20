@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.HomePage {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    background-color: $white;
+    padding: 10px 20px;
+    border-radius: $commonBorderRadius;
+    align-self: center;
+    &_title {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    &_description {
+      padding: 10px 0;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin: 20px 0;
+    }
+    .text {
+      font-size: 18px;
+    }
+  }
+}

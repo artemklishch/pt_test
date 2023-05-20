@@ -1,4 +1,6 @@
 import { FC, ReactNode } from "react";
+import DesktopNav from "../../NavMenu/DesktopNav";
+import MobileNav from "../../NavMenu/MobileNav";
 import classes from "./MainLayout.module.scss";
 
 type MainLayoutProps = {
@@ -8,9 +10,8 @@ type MainLayoutProps = {
 const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className={classes.MainLayout}>
-      <header className={classes.MainLayout__header}>
-        Hello to our books shop!!
-      </header>
+      <MobileNav />
+      <DesktopNav />
       <main className={classes.MainLayout__main}>{children}</main>
       <footer className={classes.MainLayout__footer}>
         If you have any questions - please let us know
